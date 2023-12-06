@@ -1,0 +1,16 @@
+create table country(
+    id int AUTO_INCREMENT primary key,
+    name varchar(128) not null,
+    capital varchar(64) not null,
+    population int,
+    flag mediumblob
+)
+   
+create table picture(
+    id int AUTO_INCREMENT primary key,
+    countryid int not null,
+    foreign key (countryid) references country (id) on delete cascade,
+    image_data mediumblob
+)
+
+

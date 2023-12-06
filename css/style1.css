@@ -1,0 +1,19 @@
+html, body{
+    width:100%;
+    height:100vh;
+}
+div{
+    border: 1px solid orange;
+}
+.header{
+    height:10vh;
+}
+.menu{
+    height:85vh;
+}
+.content{
+    height:85vh;
+}
+.footer{
+    height:5vh;
+}
